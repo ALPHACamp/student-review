@@ -1,14 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// redux
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import Reducers from './store/reducers/index.reducer';
+// import { composeWithDevTools } from 'redux-devtools-extension';
+
+// styles
+import { ThemeProvider } from 'styled-components';
+import { theme } from './constants/constantStyle';
+import { ResetStyles } from './styles/reset.styles';
+import { GlobalStyles } from './styles/global.style';
+import { IconFontCustumizedStyles } from './styles/iconfont.style';
+
+// icon import with iconfont
+import './assets/icofont/icofont.min.css';
+
+const reduxStore = createStore(
+    Reducers
+    // composeWithDevTools() //with redux debugging tools pluggin
+);
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <ResetStyles />
+        <GlobalStyles />
+        <IconFontCustumizedStyles />
+
+        <ThemeProvider theme={theme}>
+            <Provider store={reduxStore}>
+                <App />
+            </Provider>
+        </ThemeProvider>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
