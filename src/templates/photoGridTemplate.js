@@ -7,6 +7,7 @@ import { photoSrcFromType } from '../constants/constants';
 
 // components
 import { switchPhotoReader } from '../store/actions/ui.action';
+import MyImage from '../components/img/myImg';
 
 const PhotoGridTemplateStyle = styled.div`
     position: relative;
@@ -26,7 +27,7 @@ const PhotoGridTemplateStyle = styled.div`
     .company-img-wrapper {
         position: relative;
         width: 100%;
-        padding-bottom: 56.25%;
+        padding-bottom: 49%;
         border: 1px solid #eee;
         .photo-item {
             position: absolute;
@@ -47,7 +48,7 @@ const PhotoGridTemplateStyle = styled.div`
     .activity-img-wrapper {
         position: relative;
         width: 100%;
-        padding-bottom: 56.25%;
+        padding-bottom: 49%;
         border: 1px solid ${({ theme }) => theme.color.mono.black};
         .photo-item {
             position: absolute;
@@ -81,11 +82,6 @@ const PhotoGridTemplateStyle = styled.div`
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
-    /* @media screen and (max-width: 576px) {
-        left: 0px;
-        width: 100%;
-        grid-template-columns: 1fr;
-    } */
 `;
 
 const renderPhotoList = (dispatch, srcFrom, photoData) => {
@@ -96,12 +92,7 @@ const renderPhotoList = (dispatch, srcFrom, photoData) => {
                     className="company-img-wrapper"
                     key={`company-id-${index}`}
                 >
-                    <img
-                        className="photo-item"
-                        title={photo.alt}
-                        src={photo.src}
-                        alt={photo.alt}
-                    />
+                    <MyImage image={photo} />
                 </div>
             ));
         case photoSrcFromType.ACTIVITY:
@@ -109,18 +100,11 @@ const renderPhotoList = (dispatch, srcFrom, photoData) => {
                 <div
                     className="activity-img-wrapper"
                     key={`activity-id-${index}`}
+                    onClick={() =>
+                        dispatch(switchPhotoReader(true, photo.src, photo.alt))
+                    }
                 >
-                    <img
-                        className="photo-item"
-                        title={photo.alt}
-                        src={photo.src}
-                        alt={photo.alt}
-                        onClick={() =>
-                            dispatch(
-                                switchPhotoReader(true, photo.src, photo.alt)
-                            )
-                        }
-                    />
+                    <MyImage image={photo} />
                 </div>
             ));
 

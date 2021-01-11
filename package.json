@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name" : "Jiang Wang",
-    "email" : "lk11260@gmail.com",
-    "url" : "https://www.wjy.rocks/"
+    "name": "Jiang Wang",
+    "email": "lk11260@gmail.com",
+    "url": "https://www.wjy.rocks/"
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.18",
@@ -20,6 +20,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-image-file-resizer": "^0.3.10",
+    "react-lazy-load-image-component": "^1.5.1",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.1",
     "react-transition-group": "^4.4.1",

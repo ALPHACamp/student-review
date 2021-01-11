@@ -76,15 +76,17 @@ const BigTxtArticleTemplateStyle = styled.div`
             }
         }
 
+        p {
+            margin-bottom: 20px;
+            font-size: 4vmin;
+            line-height: 5vmin;
+        }
+
         .two-col {
             flex-direction: column;
             margin-bottom: 0px;
-
             p {
                 width: 100%;
-                margin-bottom: 20px;
-                font-size: 5vmin;
-                line-height: 6vmin;
             }
         }
     }

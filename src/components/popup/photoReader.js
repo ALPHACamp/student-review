@@ -10,6 +10,7 @@ import { CSSTransition } from 'react-transition-group';
 
 // actions
 import { switchPhotoReader } from '../../store/actions/ui.action';
+import MyImage from '../img/myImg';
 
 // styles
 const PhotoReaderStyle = styled.div`
@@ -19,6 +20,7 @@ const PhotoReaderStyle = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 1);
@@ -58,27 +60,48 @@ const PhotoReaderStyle = styled.div`
         }
     }
 
+    .img-title {
+        font-family: Noto Sans TC;
+        font-size: 2vmax;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2vmax;
+        letter-spacing: 0px;
+        text-align: center;
+        margin: 10px auto;
+        color: ${({ theme }) => theme.color.mono.white};
+    }
+
     .img-container {
+        position: relative;
         width: 100%;
         height: auto;
         min-height: auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: ${({ theme }) => theme.color.mono.black};
-    }
 
-    img {
-        width: 50%;
-        height: auto;
-        min-height: auto;
-        background: ${({ theme }) => theme.color.mono.black};
-        cursor: pointer;
+        img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            height: auto;
+            min-height: auto;
+            background: ${({ theme }) => theme.color.mono.black};
+            cursor: pointer;
+        }
     }
 
     @media screen and (max-width: 768px) {
         img {
             width: 100%;
+        }
+
+        .img-title {
+            font-size: 3vmin;
+            line-height: 4vmin;
         }
     }
 `;
@@ -114,12 +137,13 @@ const PhotoReader = () => {
                 >
                     <Icon iconName="ui-close" />
                 </div> */}
+
                 <div className="img-container">
-                    <img
-                        className="photo-item"
-                        src={photoReaderState && photoReaderState.src}
-                        alt={photoReaderState && photoReaderState.alt}
-                    />
+                    <MyImage image={photoReaderState} />
+
+                    {photoReaderState && photoReaderState.alt ? (
+                        <div className="img-title">{photoReaderState.alt}</div>
+                    ) : null}
                 </div>
             </PhotoReaderStyle>
         </CSSTransition>

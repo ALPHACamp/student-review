@@ -33,7 +33,17 @@ const ThreeColCountStyle = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        width: calc(100% - 30px * 2);
+        width: calc(100% - 50px * 2);
+        .subtitle {
+            font-family: Noto Sans TC;
+            font-size: 6vmin;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 6vmin;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #fff;
+        }
     }
 
     @media screen and (max-width: 576px) {
@@ -42,8 +52,17 @@ const ThreeColCountStyle = styled.div`
 
         .col {
             margin: 20px auto 40px auto;
+
             .subtitle {
                 width: 100%;
+                font-family: Noto Sans TC;
+                font-size: 5vmin;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 6vmin;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #fff;
             }
 
             &:last-child {

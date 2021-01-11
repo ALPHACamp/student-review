@@ -62,6 +62,7 @@ const MainBgContainer = styled.div`
         z-index: 1;
         visibility: hidden;
         opacity: 0;
+        cursor: pointer;
 
         animation: ${scrollDownArrowAnimation} 2s 3s ease-in-out infinite;
 
@@ -109,7 +110,11 @@ const renderGrowthContexts = (growthContexts) => {
                 <div className="description">
                     {context.description.replace('<br>', '\n')}
                     {context.listDescription &&
-                        context.listDescription.map((item) => <p>{item}</p>)}
+                        context.listDescription.map((item, subIndex) => (
+                            <p key={`inner-list-description-${subIndex}`}>
+                                {item}
+                            </p>
+                        ))}
                 </div>
             </div>
         ));
@@ -215,6 +220,11 @@ const Fullpage = () => {
                                     className={`scroll-down-arrow ${
                                         isShowScrollArrow ? 'isShow' : ''
                                     }`}
+                                    onClick={() => {
+                                        if (fullpageApi) {
+                                            fullpageApi.moveSectionDown();
+                                        }
+                                    }}
                                 ></div>
                             </PageTemplate>
                         </div>
@@ -545,7 +555,8 @@ const Fullpage = () => {
                                         <div className="description">
                                             <p>
                                                 35
-                                                位學生來當實習助教、助教，回饋社群
+                                                位學生來當實習助教、助教，教學相長，回饋社群
+                                                最後一頁有加一段話：每一步都是累積，刻意練習的一年，持續變成更好自己！
                                             </p>
                                         </div>
                                     </div>

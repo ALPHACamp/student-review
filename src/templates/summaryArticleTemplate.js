@@ -65,7 +65,7 @@ const SummaryArticleTemplateStyle = styled.div`
 
     /* p3 */
     .count-container {
-        width: auto;
+        width: 50%;
         height: auto;
 
         .context {
@@ -75,6 +75,8 @@ const SummaryArticleTemplateStyle = styled.div`
         }
 
         .description {
+            width: 100%;
+            margin: 0px auto;
             font-family: Noto Sans TC;
             font-size: 32px;
             font-style: normal;
@@ -212,8 +214,8 @@ const SummaryArticleTemplateStyle = styled.div`
             position: absolute;
             bottom: 80px;
             left: 50%;
-            margin-left: -100px;
-            width: 200px;
+            margin-left: -105px;
+            width: 210px;
             height: 45px;
             background-image: url(${AC_HORIZONTAL_IMG});
             background-size: cover;
@@ -225,9 +227,9 @@ const SummaryArticleTemplateStyle = styled.div`
                 position: absolute;
                 bottom: 20px;
                 left: 50%;
-                margin-left: -70px;
-                width: 140px;
-                height: 30px;
+                margin-left: -82px;
+                width: 164px;
+                height: 35px;
                 background-image: url(${AC_HORIZONTAL_IMG});
                 background-size: cover;
                 background-position: center center;
@@ -242,6 +244,11 @@ const SummaryArticleTemplateStyle = styled.div`
 
         .count-container {
             width: 90%;
+            .description {
+                margin-top: 10px;
+                font-size: 5vmin;
+                line-height: 7vmin;
+            }
         }
 
         .diversity-bg {
