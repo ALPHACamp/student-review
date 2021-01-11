@@ -85,7 +85,7 @@ const ThreeColCount = () => {
                 <div className="subtitle">70 個單元的工程師求職準備大全</div>
             </div>
             <div className="col">
-                <GradientCountNumber text="40" />
+                <GradientCountNumber text="40+" />
                 <div className="subtitle">
                     40+ 份履歷 & 作品集 個人 feedback
                 </div>

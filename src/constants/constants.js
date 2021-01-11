@@ -132,25 +132,25 @@ export const activitiesLogosData = [
 
 export const growthContexts = [
     {
-        title: 'Emily，學期 2-2：軟體開發實務入門',
+        title: 'Emily：軟體開發實務入門',
         titleColor: 'red',
         description:
             '相比前陣子比較被動式的學習(跟著教案走)，現在會有意識地覺察自己對於當下學習的理解深度，並也會嘗試替換相似功能的語法實際驗證兩者間的差別，也會就印象中相似的語法去尋找MDN資料，比對兩者間的使用情境。相比之前，現在會以更正向的態度看待自己未知、不熟悉的事情。',
     },
     {
-        title: 'Henry，學期 2-1：JavaScript 前端開發',
+        title: 'Henry：JavaScript 前端開發',
         titleColor: 'red',
         description:
             '脫離學校之後，不再能常常接受到老師、同學們的鼓勵，因此在成長過程中，即使能得到助教的鼓勵，有時候還是難免會陷入無法自拔的自我懷疑，想要停下腳步。因此我現在正練習適當地給予自我肯定。畢竟事情做了才有改善的空間，什麼都不做可是進步不了的。',
     },
     {
-        title: 'Sherry，學期 2-1：JavaScript 前端開發',
+        title: 'Sherry：JavaScript 前端開發',
         titleColor: 'red',
         description:
             '挫折感越來越沒這麼強，可能因為練習過程中有發現自己的進步，所以也更容易跨過去，也可能是習慣了，學習新東西就是這樣，一種接受現實的感覺與挫折感共存，總之是盯著目標走吧，已經決定好不管讀多久，讀到一年，也想學起來，因為我覺得培養完成網頁開發能力後的世界，有很多我想要的東西。',
     },
     {
-        title: 'Karol，學期 2-1：JavaScript 前端開發',
+        title: 'Karol：JavaScript 前端開發',
         titleColor: 'red',
         description:
             '當我看到一個比較複雜的概念時，可能會有點排斥，但是還是會逼自己去學習，理解了之後發現沒有想像中困難時，就會覺得很有成就感。',
@@ -160,7 +160,7 @@ export const growthContexts = [
         ],
     },
     {
-        title: '許丹，學期 2-1：JavaScript 前端開發',
+        title: '許丹：JavaScript 前端開發',
         titleColor: 'red',
         description:
             '這禮拜的寫作業過程，讓我體會到“就去試試看”的重要性，我之前總是會想先釐清所有步驟跟原理才開始實作，但其實很多時候，都會在實作中突然靈光乍現，一邊做一邊想，自然而然就達成目的了，等到這時候再去弄懂背後的邏輯跟原理也不遲！',

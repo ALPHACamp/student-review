@@ -274,7 +274,7 @@ const Fullpage = () => {
                                 <SummaryArticleTemplate>
                                     <div className="count-container">
                                         <ArticleTitle title="學習時數"></ArticleTitle>
-                                        <GradientCountNumber text="140K" />
+                                        <GradientCountNumber text="140K+" />
                                         <div className="description">
                                             <p>
                                                 2020 AC 學生社群共投注了超過 14
@@ -355,7 +355,7 @@ const Fullpage = () => {
                                 <SummaryArticleTemplate>
                                     <div className="count-container">
                                         <ArticleTitle title="完成專案"></ArticleTitle>
-                                        <GradientCountNumber text="3000" />
+                                        <GradientCountNumber text="3000+" />
                                         <div className="description">
                                             <p>
                                                 今年同學共完成超過 3000
@@ -381,7 +381,7 @@ const Fullpage = () => {
                                 <SummaryArticleTemplate>
                                     <div className="count-container">
                                         <ArticleTitle title="成功完課"></ArticleTitle>
-                                        <GradientCountNumber text="1000" />
+                                        <GradientCountNumber text="1000+" />
                                         <div className="description">
                                             <p>
                                                 超過 1000
@@ -432,7 +432,7 @@ const Fullpage = () => {
                                 <BigTxtArticleTemplate
                                     title="29"
                                     titleFontSize="10vmax"
-                                    subtitle="累積了 29 份畢業多人協作專案，衝刺轉職"
+                                    subtitle="29 組團隊協作專案"
                                 >
                                     <div className="two-col">
                                         <p>
@@ -523,8 +523,8 @@ const Fullpage = () => {
                                     <div className="count-container">
                                         <ArticleTitle title="平均月薪"></ArticleTitle>
                                         <GradientCountNumber
-                                            fontSize="14vmax"
-                                            text="53,000"
+                                            fontSize="9vmax"
+                                            text="53,000+"
                                         />
                                         <div className="description">
                                             <p>
@@ -556,7 +556,6 @@ const Fullpage = () => {
                                             <p>
                                                 35
                                                 位學生來當實習助教、助教，教學相長，回饋社群
-                                                最後一頁有加一段話：每一步都是累積，刻意練習的一年，持續變成更好自己！
                                             </p>
                                         </div>
                                     </div>
@@ -594,7 +593,21 @@ const Fullpage = () => {
                             >
                                 <SummaryArticleTemplate>
                                     <div className="outcome-container">
-                                        <span>#outcomefirst</span>
+                                        <p>
+                                            每一步都是累積，刻意練習的一年，持續變成更好自己！
+                                        </p>
+                                        <p>
+                                            感謝我們的學生、助教、講師、企業合作夥伴與
+                                            AC 團隊讓 2020
+                                            成為如此精彩的一年！疫情並沒有減低大家對學習與教學的熱情。AC
+                                            在 2021
+                                            年有更多新計畫，幫助大家繼續發展更好的職涯。期待今年
+                                            AC 與你一同成長！
+                                        </p>
+                                        <span className="outcome">
+                                            #outcomefirst
+                                        </span>
+
                                         <div className="ac-horizontal-logo"></div>
                                     </div>
                                 </SummaryArticleTemplate>

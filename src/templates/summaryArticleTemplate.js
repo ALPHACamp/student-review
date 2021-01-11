@@ -65,7 +65,7 @@ const SummaryArticleTemplateStyle = styled.div`
 
     /* p3 */
     .count-container {
-        width: 50%;
+        width: 55%;
         height: auto;
 
         .context {
@@ -194,12 +194,29 @@ const SummaryArticleTemplateStyle = styled.div`
         position: relative;
         top: 0px;
         left: 0px;
-        width: 100%;
+        width: 60%;
         height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        span {
+
+        p {
+            font-family: Noto Sans TC;
+            font-size: 2vmax;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 3vmax;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin: 0px;
+            }
+        }
+
+        span.outcome {
             font-family: Noto Sans TC;
             font-size: 10vmin;
             font-style: normal;
@@ -210,6 +227,7 @@ const SummaryArticleTemplateStyle = styled.div`
             text-transform: uppercase;
             color: #ffffff;
         }
+
         .ac-horizontal-logo {
             position: absolute;
             bottom: 80px;
@@ -223,6 +241,7 @@ const SummaryArticleTemplateStyle = styled.div`
         }
 
         @media screen and (max-width: 567px) {
+            width: 90%;
             .ac-horizontal-logo {
                 position: absolute;
                 bottom: 20px;
@@ -233,6 +252,11 @@ const SummaryArticleTemplateStyle = styled.div`
                 background-image: url(${AC_HORIZONTAL_IMG});
                 background-size: cover;
                 background-position: center center;
+            }
+
+            p {
+                font-size: 4vmin;
+                line-height: 5vmin;
             }
         }
     }
