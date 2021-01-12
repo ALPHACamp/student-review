@@ -45,15 +45,15 @@ const SummaryArticleTemplateStyle = styled.div`
         }
 
         .title {
-            font-size: 40px;
+            font-size: 3vmax;
             font-weight: bold;
-            line-height: 45px;
+            line-height: 4vmax;
             margin-bottom: 40px;
         }
 
         .description {
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 2vmax;
+            line-height: 3vmax;
             font-weight: medium;
             margin-bottom: 20px;
             &.bold {
@@ -146,12 +146,13 @@ const SummaryArticleTemplateStyle = styled.div`
 
                 .title {
                     font-family: Noto Sans TC;
-                    font-size: 18px;
+                    font-size: 2vmax;
+                    line-height: 3vmax;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 30px;
                     letter-spacing: 0em;
                     text-align: left;
+                    margin-bottom: 10px;
 
                     &.red {
                         color: ${({ theme }) => theme.color.colorful.title.red};
@@ -163,10 +164,10 @@ const SummaryArticleTemplateStyle = styled.div`
                 }
                 .description {
                     font-family: Noto Sans TC;
-                    font-size: 16px;
+                    font-size: 1.5vmax;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 30px;
+                    line-height: 2vmax;
                     letter-spacing: 0em;
                     text-align: left;
                 }
@@ -179,6 +180,16 @@ const SummaryArticleTemplateStyle = styled.div`
                 flex-wrap: nowrap;
                 .list-item {
                     width: 100%;
+
+                    .title {
+                        font-size: 5vmin;
+                        line-height: 6vmin;
+                    }
+
+                    .description {
+                        font-size: 4vmin;
+                        line-height: 5vmin;
+                    }
                 }
             }
         }
@@ -264,6 +275,16 @@ const SummaryArticleTemplateStyle = styled.div`
     @media screen and (max-width: 1024px) {
         .pure-text-container {
             width: 80%;
+
+            .title {
+                font-size: 5vmin;
+                line-height: 6vmin;
+            }
+
+            .description {
+                font-size: 4vmin;
+                line-height: 6vmin;
+            }
         }
 
         .count-container {
